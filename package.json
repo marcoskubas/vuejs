@@ -1,0 +1,22 @@
+{
+  "name": "vuejs",
+  "version": "0.0.1",
+  "description": "aprendizado curso code education vuejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoskubas/vuejs.git"
+  },
+  "author": "marcoskubas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoskubas/vuejs/issues"
+  },
+  "homepage": "https://github.com/marcoskubas/vuejs#readme",
+  "dependencies": {
+    "vue": "^1.0.28"
+  }
+}
