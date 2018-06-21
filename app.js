@@ -14,7 +14,8 @@ var app = new Vue({
         menus: [
             {id: 0, name: "Listar contas"},
             {id: 1, name: "Criar conta"}
-        ]
+        ],
+        activedView: 0,
 	},
 	computed:{
 		status : function() {
@@ -29,7 +30,7 @@ var app = new Vue({
 	},
     methods:{
         showView: function(id){
-            console.log(id);
+            this.activedView = id;
         }
     }
 });
