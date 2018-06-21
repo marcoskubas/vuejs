@@ -10,7 +10,11 @@ var app = new Vue({
 			{date_due: "24/08/2016", name: "Cartão de crédito", value: 1500.99, done: 0},
 			{date_due: "25/08/2016", name: "Empréstimo", value: 2000.99, done: 0},
 			{date_due: "26/08/2016", name: "Gasolina", value: 200.99, done: 0}
-		]
+		],
+        menus: [
+            {id: 0, name: "Listar contas"},
+            {id: 1, name: "Criar conta"}
+        ]
 	},
 	computed:{
 		status : function() {
@@ -22,5 +26,10 @@ var app = new Vue({
             }
             return !count ? "Nenhuma conta a pagar" : "Existem " + count + " contas a serem pagas";
         }
-	}
+	},
+    methods:{
+        showView: function(id){
+            console.log(id);
+        }
+    }
 });
